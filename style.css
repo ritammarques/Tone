@@ -1,0 +1,437 @@
+:root{
+    --branco:white;
+    --preto:black;
+}
+body{
+    margin:0;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background:black
+
+}
+canvas{
+    overflow:hidden;
+}
+img{
+    width:100%;
+    height:100%;
+    margin:0;
+}
+#bm{
+    z-index:4;
+}
+
+.bar {
+    display: block;
+    height: 10px;
+    border-radius: 1vh;
+    margin: 10px auto;
+    width: 60px;
+    background: var(--branco);
+}
+
+.icon {
+    display: inherit;
+    float: right;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    padding: 20px;
+    right: 0;
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.icon div {
+
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.icon {
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.icon div:nth-child(2) {
+    margin: 0 auto;
+}
+
+.active1 {
+    -webkit-transform: translateY(20px) rotateZ(45deg);
+    -moz-transform: translateY(20px) rotateZ(45deg);
+    -ms-transform: translateY(20px) rotateZ(45deg);
+    -o-transform: translateY(20px) rotateZ(45deg);
+    transform: translateY(20px) rotateZ(45deg);
+}
+
+.active3 {
+    -webkit-transform: translateY(-20px) rotateZ(-45deg);
+    -moz-transform: translateY(-20px) rotateZ(-45deg);
+    -ms-transform: translateY(-20px) rotateZ(-45deg);
+    -o-transform: translateY(-20px) rotateZ(-45deg);
+    transform: translateY(-20px) rotateZ(-45deg);
+}
+
+.active2 {
+    width: 0;
+}
+nav {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    webkit-transition: background-color .2s ease;
+    -moz-transition: background-color .2s ease;
+    -ms-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    left: 0;
+    border-bottom: white 10px;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 5;
+    right: 0;
+
+
+
+}
+nav img{
+    transform:scale(0.3);
+    margin:0;
+    padding-right:5px;
+}
+nav ul {
+    list-style: none;
+    text-align: right;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 4vh;
+    color:var(--branco);
+    text-decoration: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--branco);
+    width:90%;
+}
+nav ul li a div{
+    width:35%;
+    display:block;
+    float:left;
+    text-align: left;
+    padding:10px;
+
+}
+nav ul li a div img{
+    text-align: left;
+    display:block;
+    float:left;
+
+}
+
+#navbar {
+    top: 0;
+}
+
+.stroke {
+    background: linear-gradient(to right, rgba(95,106,255,0.80) , rgba(95,106,255,0.10));
+
+    left:101%;
+    transition:transform ease-in-out;
+    transition-duration: 1s;
+    pointer-events: none;
+}
+
+.transform {
+    transform: translateX(-100%);
+    pointer-events: inherit;
+}
+
+
+.stroke ul {
+    margin-top:100px;
+    text-align: right;
+    width: 100%;
+    float: right;
+    clear: both;
+    padding-right:30px;
+
+
+}
+.stroke a:active{
+    background:transparent;
+
+}
+.stroke ul li {
+    float: right;
+    padding: 0 5px;
+    margin: 2px 0;
+    background: transparent;
+}
+#index a{
+    text-decoration: none;
+    color: #80E9DE;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+}
+.start p{
+    margin:2vh;
+}
+.start{
+    background: white;
+    height: 8vh;
+    border-radius: 7vh;
+    width:80%;
+    display:block;
+    margin-left:10%;
+    position: fixed;
+    top:70%;
+    transform: translateY(-50%);
+}
+.logo{
+
+    position:fixed;
+    display:block;
+    width:80%;
+    margin-left:10%;
+    top:20%;
+
+}
+#fundo{
+    z-index: -1;
+}
+#fundo2{
+    position: fixed;
+    top:0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index:0;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    color:rgb(95,106,255);
+    position: fixed;
+    top: 10%;
+    font-size: 5vh;
+    margin-left:10%;
+
+}
+.volume{
+
+    position: fixed;
+    top: 30%;
+    width:90vw;
+    height:20vh;
+    margin-left:10%;
+    border-radius: 3vh;
+}
+.beat{
+
+    position: fixed;
+    top: 60%;
+    width:90vw;
+    height:20vh;
+    margin-left:10%;
+    border-radius: 3vh;
+}
+.noDisplay{
+    display:none;
+}
+.Display{
+    display: inherit;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:3vh;
+    color:rgb(95,106,255);
+}
+#beat, #volume{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 3vh;
+    height:4vh;
+    width:80vw;
+    text-align: center;
+
+}
+#aplicação img{
+    width:7vh;
+    height: 7vh;
+}
+
+
+/*sliders*/
+input[type=range] {
+
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 90%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 90%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #80E9DE;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background: #80E9DE;
+    cursor: pointer;
+    margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+
+    border: 1px solid #80E9DE;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background: #80E9DE;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+
+    border: 1px solid #80E9DE;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background: #80E9DE;
+    cursor: pointer;
+}
+
+
+
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+
+    background: rgb(95,106,255);
+    border-radius: 1.3px;
+    border: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+
+    background:rgb(95,106,255);
+    border-radius: 1.3px;
+    border:none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: rgb(95,106,255);
+    border:none;
+    border-radius: 2.6px;
+
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: rgb(95,106,255);
+}
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: none;
+    border-radius: 2.6px;
+
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: rgb(95,106,255);
+}
+
+
+/*about*/
+
+.texto{
+    width:80vw;
+    margin-left:10vw;
+    overflow-y: scroll;
+    background:white;
+    border-radius: 3vh;
+    height:75vh;
+    position:fixed;
+    top:20vh;
+
+
+}
+.texto>div{
+    height:70vh;
+    margin-top:2.5vh;
+
+}
+.paragrafo{
+    width:90%;
+    top:5%;
+    margin-left:5%;
+   padding-bottom: 2vh;
+}
+.paragrafo p{
+    font-family: 'Open Sans', sans-serif;
+}
+h3{
+
+    font-family: 'Open Sans', sans-serif;
+}
+.displayNone{
+    display:none;
+}
+.displayInherit{
+    display:inherit;
+}
